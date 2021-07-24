@@ -1,0 +1,7 @@
+# Visitor_Management_System
+ 
+During such Hazards conditions it was important to keep a track of people that also without any contact. The security team always comes in contact with strangers which is not safe during such crises. The existing system of manual tracking was every dangerous to security guards and was not efficient. This gave us the motivation to build this system which can avoid contacts between visitors and company staff. It would also help to warn people who came in contact with a person who has got COVID-19. It had a lot of general benefits too.(4)
+
+The main endeavor of the proposed application is that anyone can use the services offered at anytime with ease. (3) The details of the visitors and employees can be offered at the moment. Employee ID is also generated for the employees which is used for the entry, this saves a lot of time as they don’t have to repeat the process again and again of entering the details for entering the premises.(1) A detail list of date and time is maintained for the visitors and employees. This is also helpful in security reasons.
+
+This system brings efficiency in the work which was not seen in previous system of manual paper work. It’s also contributes to the eco-system by saving paper. Major part is of securing the company from the virus and its security department. We sincerely wish that this system could make some effect in everyday life of the people visiting the company and securing their health.
