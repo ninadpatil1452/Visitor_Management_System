@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.Controller">
+   <top>
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="52.0" prefWidth="600.0" text="Visitor Management System" textAlignment="CENTER" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Arial Italic" size="22.0" />
+         </font>
+      </Label>
+   </top>
+   <left>
+      <VBox alignment="CENTER" prefHeight="348.0" prefWidth="139.0" spacing="20.0" BorderPane.alignment="CENTER">
+         <children>
+            <Button fx:id="newVisitor" mnemonicParsing="false" onAction="#NewVisitorButtonPushed" prefHeight="30.0" prefWidth="174.0" text="New Visitor" />
+            <Button fx:id="visitorList" mnemonicParsing="false" onAction="#VisitorListButtonPushed" prefHeight="30.0" prefWidth="162.0" text="Visitor List" />
+            <Button fx:id="newEmployee" mnemonicParsing="false" onAction="#EmployeeEntryButtonPushed" prefHeight="30.0" prefWidth="130.0" text="New Employee" />
+            <Button fx:id="EmployeeList" mnemonicParsing="false" onAction="#EmployeeListButtonPushed" prefHeight="30.0" prefWidth="163.0" text="Employee List" />
+            <Button mnemonicParsing="false" onAction="#EmployeeVisitorButtonPushed" prefHeight="30.0" prefWidth="130.0" text="Employee Entry" />
+            <Button mnemonicParsing="false" onAction="#EmployeeVisitorListButtonPushed" prefHeight="30.0" prefWidth="130.0" text="Employee Visitor List" />
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+      </VBox>
+   </left>
+</BorderPane>

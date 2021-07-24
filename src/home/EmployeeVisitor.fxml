@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<?import javafx.scene.control.ToggleGroup?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.EmployeeVisitor">
+   <children>
+      <Label alignment="CENTER" layoutY="-1.0" prefHeight="50.0" prefWidth="602.0" text="Employee Entry" textFill="#0ccffa">
+         <font>
+            <Font name="Calibri Italic" size="39.0" />
+         </font>
+      </Label>
+      <CheckBox fx:id="temperature" alignment="CENTER" layoutX="44.0" layoutY="110.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="174.0" text="Safe Temperature ? " textAlignment="CENTER" AnchorPane.rightAnchor="384.0">
+         <font>
+            <Font name="Calibri Italic" size="15.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="315.0" layoutY="110.0" prefHeight="36.0" prefWidth="103.0" text="Any Symptoms :">
+         <font>
+            <Font name="Calibri Italic" size="15.0" />
+         </font>
+      </Label>
+       <fx:define>
+           <ToggleGroup fx:id="toggleGroup"/>
+       </fx:define>
+      <RadioButton layoutX="418.0" layoutY="120.0" mnemonicParsing="false" text="Yes" toggleGroup="$toggleGroup">
+         <font>
+            <Font name="Calibri Italic" size="15.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="symptoms" layoutX="481.0" layoutY="120.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="47.0" text="No" toggleGroup="$toggleGroup">
+         <font>
+            <Font name="Calibri Italic" size="15.0" />
+         </font>
+      </RadioButton>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="131.0" layoutY="186.0" prefHeight="28.0" prefWidth="110.0" text="Employee ID :">
+         <font>
+            <Font name="Calibri Italic" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="text" layoutX="241.0" layoutY="188.0" />
+      <Button onAction="#enterButtonPushed" layoutX="138.0" layoutY="294.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="95.0" text="Enter">
+         <font>
+            <Font name="Calibri Bold Italic" size="15.0" />
+         </font>
+      </Button>
+      <Button  onAction="#MainMenuButtonPushed" layoutX="370.0" layoutY="294.0" mnemonicParsing="false" prefHeight="36.0" prefWidth="95.0" text="Main Menu">
+         <font>
+            <Font name="Calibri Bold Italic" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

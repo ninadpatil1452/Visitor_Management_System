@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.control.ToggleGroup?>
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="home.NewVisitor">
+   <children>
+      <TextField fx:id="visitorName" layoutX="70.0" layoutY="73.0" />
+      <Label contentDisplay="CENTER" layoutX="14.0" layoutY="72.0" prefHeight="26.0" prefWidth="42.0" text="Name" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="visitorNumber" layoutX="437.0" layoutY="74.0" />
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="325.0" layoutY="76.0" prefHeight="20.0" prefWidth="97.0" text="Phone Number" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Italic" size="14.0" />
+         </font>
+      </Label>
+      <CheckBox  fx:id="temperature" layoutX="14.0" layoutY="135.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="172.0" text="Safe Temperature ? ">
+         <font>
+            <Font name="Arial Italic" size="14.0" />
+         </font>
+      </CheckBox>
+      <Label layoutX="324.0" layoutY="139.0" prefHeight="26.0" prefWidth="98.0" text="Purpose">
+         <font>
+            <Font name="Arial Italic" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="visitorPurpose" layoutX="436.0" layoutY="139.0" prefHeight="26.0" prefWidth="149.0" />
+      <Label layoutX="14.0" layoutY="191.0" prefHeight="26.0" prefWidth="314.0" text="Are you fully Vaccinated ?">
+         <font>
+            <Font name="Arial Italic" size="14.0" />
+         </font>
+      </Label>
+
+      <Button  onAction="#enterButtonPushed" alignment="CENTER" contentDisplay="CENTER" layoutX="251.0" layoutY="295.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Enter">
+         <font>
+            <Font name="Arial Italic" size="14.0" />
+         </font>
+      </Button>
+      <Label alignment="CENTER" contentDisplay="CENTER" layoutX="4.0" layoutY="8.0" prefHeight="48.0" prefWidth="591.0" text="Please Enter your data" textAlignment="CENTER">
+         <font>
+            <Font name="Arial Italic" size="28.0" />
+         </font>
+      </Label>
+      <Button layoutX="496.0" layoutY="359.0" mnemonicParsing="false" onAction="#MainMenuButtonPushed" text="Main Menu">
+         <font>
+            <Font name="Arial Italic" size="14.0" />
+         </font>
+      </Button>
+      <fx:define>
+         <ToggleGroup fx:id="toggleGroup"/>
+      </fx:define>
+      <RadioButton  layoutX="31.0" layoutY="222.0" mnemonicParsing="false" text="Yes"  toggleGroup="$toggleGroup">
+         <font>
+            <Font name="Arial Italic" size="14.0" />
+         </font>
+
+      </RadioButton>
+      <RadioButton fx:id="internationalVisit" layoutX="31.0" layoutY="251.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="50.0" text="No"  toggleGroup="$toggleGroup">
+         <font>
+            <Font name="Arial Italic" size="14.0" />
+         </font>
+      </RadioButton>
+   </children>
+</AnchorPane>
